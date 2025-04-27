@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f9fd;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e9c46a;
+}
+
+.bienvenida {
+    padding: 2rem;
+    background-color: #e3f2fd;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    color: #264653;
+}
+
+#buscador {
+    display: block;
+    margin: 1rem auto 2rem auto;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #00ff2a;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#buscador:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 8px #64b5f6;
+}
+
+#seccion-productos {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+    text-align: left;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    color: #2a9d8f;
+}
+
+.producto p {
+    color: #333;
+    margin-top: 10px;
+}
+
+.producto button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #f4a261;
+}
+
+.producto.encontrado {
+    background-color: #c8e6c9;
+    border: 2px solid #388e3c;
+}
+
+h4 {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+#mensaje-error {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    #buscador {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#bienvenida {
+    display: block;
+    background-image: url('imagen.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    text-align: center;
+    padding: 20px;
+    height: 85vh; 
+}
+#seccion-productos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#productos {
+    display: none;
+}
+
+.comprar-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comprar-btn:hover {
+    background-color: #45a049;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+#contenido-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    animation: mostrarMensaje 3s forwards;
+}
+
+#bienvenida-mensaje {
+    font-size: 3rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@keyframes mostrarMensaje {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+/* Sección de Contacto */
+#seccion-contactos {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #f0faff, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+#seccion-contactos h2 {
+    font-size: 2.8rem;
+    color: #005f73;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#seccion-contactos p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+/* Información de Contacto */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-item {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #d0f0f8;
+    border-radius: 15px;
+    width: 260px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.contact-item h3 {
+    color: #008891;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-item p {
+    color: #555555;
+    font-size: 1rem;
+}
+
+/* Sección de Contratación */
+#contractar {
+    display: none;
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f7fbfc;
+    border: 2px solid #cde9f3;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    width: 85%;
+    max-width: 520px;
+    transition: all 0.4s ease;
+}
+
+#contractar h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+#contractar p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 15px 0;
+}
+
+#contractar button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contractar button:hover {
+    background-color: #005f86;
+    transform: translateY(-3px);
+}
+
+  
+
+  

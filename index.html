@@ -1,0 +1,301 @@
+<head>
+    <title>Farmacia Carol</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #bienvenida {
+            display: block;
+        }
+        
+        #productos, #seccion-contactos, #contractar {
+        display: none;
+    } 
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <a href="#" id="inicio-link">Inicio</a>
+
+            <a href="#seccion-productos" id="productos-link">Productos</a>
+            <a href="#seccion-contactos" id="contacto-link">Contactanos</a>
+            <a href="#contractar" id="contractar-link">Solicitar Trabajo</a>
+        
+        </nav>
+    </header>
+
+    <main>
+        <section id="bienvenida">
+            <span>Bienvenido a la Farmacia Carol</span>
+        <strong> <h3 style="color: rgb(0, 0, 0); margin-top: 300px;"> El 15 de marzo de 1987 nace la cadena de Farmacias Carol, con la adquisición de la primera sucursal ubicada en la Gustavo Mejía Ricart # 24 del ensanche Naco en Santo Domingo. 
+                Ya para ese entonces dicha farmacia llevaba el nombre de Carol y contaba con una clientela leal que depositaba en ella la confianza del despacho de productos. Esta a su vez ya era reconocida en la zona por aquellos profesionales de la salud quienes 
+                confiaban en el servicio que brindaba esta farmacia y la importante labor que la misma desarrollaba en la comunidad de Naco.
+                Al pasar los años la farmacia empezó a crecer y de ahí la necesidad de expandirse a otros puntos estratégicos de Santo Domingo y luego de Santiago, para dar inicio a lo que hoy se conoce como la principal cadena de Farmacias del país.</h3> </strong>
+        </section>
+
+        <section id="productos">
+            <center><h2>Nuestros Productos</h2></center>
+            <input type="text" id="buscador" placeholder="Buscar productos..." />
+            <p id="mensaje-error" style="display:none; color:red;">animal eso no esta en nuestra tienda.</p>
+
+            <section>
+                <div class="producto" data-nombre="paracetamol">
+                    <h3>Paracetamol 500mg</h3>
+                    <p>$3.00 - Alivia el dolor y la fiebre.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="diclofenaco">
+                    <h3>Diclofenaco 50mg</h3>
+                    <p>RD$5,600 - Alivia inflamaciones y dolores en ciertas condiciones</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="ibuprofeno">
+                    <h3>Ibuprofeno 400mg</h3>
+                    <p>RD$154 - Ayuda a reducir el dolor y la inflamación</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="amoxicilina">
+                    <h3>Amoxicilina 500mg</h3>
+                    <p>RD$40 - Se utiliza para tratar infecciones bacterianas</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="loratadina">
+                    <h3>Loratadina 10mg</h3>
+                    <p>RD$180 - Alivia los síntomas de alergias</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="ranitidina">
+                    <h3>Ranitidina 150mg</h3>
+                    <p>RD$180 - Alivia la acidez y la indigestión</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="omeprazol">
+                    <h3>Omeprazol 20mg</h3>
+                    <p>RD$621 - Ayuda en el tratamiento de úlceras y reflujo</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="preservativos">
+                    <h3>Preservativos Durex (paquete)</h3>
+                    <p>RD$200 - Protege contra enfermedades de transmisión sexual y evita la reproducción</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="clorfenamina">
+                    <h3>Clorfenamina 4mg</h3>
+                    <p>RD$100 - Utilizado para tratar alergias y dolores</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="lorazepam">
+                    <h3>Ambroxol jarabe 15 mg/5 ml</h3>
+                    <p>RD$250 - Ayuda a reducir la ansiedad y promover el sueño</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="vitamina">
+                    <h3>Ácido fólico 5 mg</h3>
+                    <p>RD$300 - Suplemento vitamínico esencial durante el embarazo para prevenir defectos del tubo neural en el feto. Refuerza tu sistema inmunológico.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Melatonina">
+                    <h3>Melatonina 3 mg</h3>
+                    <p>RD$685 - Suplemento natural que ayuda a regular el ciclo del sueño, especialmente útil en casos de insomnio o jet lag.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Ambroxol">
+                    <h3>Ambroxol jarabe 15 mg/5 ml</h3>
+                    <p>RD$250 - Mucolítico utilizado para facilitar la eliminación de las secreciones bronquiales en afecciones respiratorias</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Cetirizina">
+                    <h3>Cetirizina 10 mg</h3>
+                    <p>RD$145 - Antihistamínico que alivia los síntomas de alergias como estornudos, picazón y secreción nasal</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Ciprofloxacina">
+                    <h3>Ciprofloxacina 500 mg</h3>
+                    <p>RD$500 - Antibiótico de amplio espectro utilizado para tratar diversas infecciones bacterianas</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Metformina">
+                    <h3>Metformina 850 mg</h3>
+                    <p>RD$550 - Medicamento oral utilizado en el tratamiento de la diabetes tipo 2 para controlar los niveles de glucosa en sangre</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Losartán potásico">
+                    <h3>Losartán potásico 50 mg</h3>
+                    <p>RD$300 - Medicamento antihipertensivo que ayuda a controlar la presión arterial alta</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Complejo B">
+                    <h3>Complejo B</h3>
+                    <p>RD$250 - Suplemento vitamínico que contribuye al buen funcionamiento del sistema nervioso y al metabolismo energético</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Acetaminofén">
+                    <h3>Acetaminofén 500 mg</h3>
+                    <p>RD$150 - Analgésico y antipirético empleado para aliviar dolores leves y reducir la fiebre</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Cardioaspirina">
+                    <h3>Cardioaspirina Ácido Acetilsalicílico 100 mg</h3>
+                    <p>RD$200 - Anticoagulante utilizado para prevenir eventos cardiovasculares como infartos y accidentes cerebrovasculares</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="vitamina">
+                    <h3>Vitamina C</h3>
+                    <p>RD$5.50 - Refuerza tu sistema inmunológico</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Valsartán">
+                    <h3>Valsartán 80 mg (30 tabletas)</h3>
+                    <p>RD$180 - Antihipertensivo utilizado para controlar la presión arterial alta y prevenir enfermedades cardiovasculares.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Candesartán">
+                    <h3>Candesartán 16 mg (30 tabletas)</h3>
+                    <p>RD$105 - Medicamento para tratar la hipertensión y reducir el riesgo de accidentes cerebrovasculares.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Losartán">
+                    <h3>Losartán 50 mg (100 tabletas)</h3>
+                    <p>RD$1,440 - Antihipertensivo utilizado para tratar la presión arterial alta y proteger los riñones en pacientes con diabetes tipo 2.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+
+                <div class="producto" data-nombre="Simvastatina">
+                    <h3>Simvastatina 20 mg (100 tabletas)</h3>
+                    <p>RD$1,200- Es un fármaco de la familia de las estatinas utilizado para disminuir los niveles de colesterol en sangre.</p>
+                    <button class="comprar-btn">Comprar</button>
+                </div>
+           
+            </main>
+
+            <main>
+
+                  <section id="seccion-contactos">
+                    <h2>Contacta con la Farmacia Carol</h2>
+                    <p>Si tienes alguna consulta o necesitas más información, puedes contactarnos a través de los siguientes medios:</p>
+                    <strong>Teléfono:</strong> (809) 562-6767<br>
+                    <strong>Correo electrónico:</strong>farmaciacarol@gmail.com<br>
+                    <strong>Dirección:</strong> esquina Mexico, Bonao 42000
+                </section>
+
+            </main>
+
+        <main>
+          
+            <section id="contractar">
+
+                <h2>Solicita Trabajo con Nosotros</h2>
+                <p>¿Quieres formar parte de nuestro equipo? Completa el siguiente formulario:</p>
+                <form action="enviar_solicitud.php" method="post" data-netlify="true">
+                    <input type="hidden" name="form-name" value="solicitud-trabajo">
+
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                    <label for="puesto">Puesto deseado:</label><br>
+                    <input type="text" id="puesto" name="puesto" required><br><br>
+                    <label for="mensaje">Mensaje adicional:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea><br><br>
+                    <button type="submit">Enviar Solicitud</button>
+                </form>
+            </section>
+        </main>
+        
+    <footer>
+        <p>&copy; 2025 Farmacia Carol - Derechos reservados.</p>
+    </footer>
+
+    <script>
+document.getElementById('productos-link').addEventListener('click', function () {
+    document.getElementById('bienvenida').style.display = 'none';
+    document.getElementById('productos').style.display = 'block';
+    document.getElementById('seccion-contactos').style.display = 'none';
+    document.getElementById('contractar').style.display = 'none'; 
+});
+
+document.getElementById('inicio-link').addEventListener('click', function () {
+    document.getElementById('bienvenida').style.display = 'block';
+    document.getElementById('productos').style.display = 'none';
+    document.getElementById('seccion-contactos').style.display = 'none'; 
+    document.getElementById('contractar').style.display = 'none'; 
+});
+
+   
+        document.getElementById('contacto-link').addEventListener('click', function () {
+        document.getElementById('bienvenida').style.display = 'none';
+        document.getElementById('productos').style.display = 'none';
+        document.getElementById('seccion-contactos').style.display = 'block'; 
+        document.getElementById('contractar').style.display = 'none';
+    });
+
+        document.getElementById('contractar-link').addEventListener('click', function () {
+        document.getElementById('bienvenida').style.display = 'none';
+        document.getElementById('productos').style.display = 'none';
+        document.getElementById('seccion-contactos').style.display = 'none';
+        document.getElementById('contractar').style.display = 'block'; 
+    });
+
+
+
+        document.getElementById('contractar-link').addEventListener('click', function () {
+    alert('Redirigiendo a solicitar servicio...');
+    });
+    
+        document.getElementById('buscador').addEventListener('keyup', function () {
+            const texto = this.value.toLowerCase();
+            const productos = document.querySelectorAll('.producto');
+            let hayCoincidencia = false;
+    
+            productos.forEach(producto => {
+                const nombre = producto.dataset.nombre.toLowerCase();
+                const visible = nombre.includes(texto);
+                producto.style.display = visible ? '' : 'none';
+                if (visible) {
+                    hayCoincidencia = true;
+                }
+            });
+    
+            const mensajeError = document.getElementById('mensaje-error');
+            mensajeError.style.display = hayCoincidencia ? 'none' : 'block';
+        });
+    
+        const botonesCompra = document.querySelectorAll('.comprar-btn');
+        botonesCompra.forEach(boton => {
+            boton.addEventListener('click', function () {
+                alert('Producto añadido al carrito');
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
